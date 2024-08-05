@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <base href="/">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <title>5 Interesting Modules Of Python</title>
+    <meta name="description"
+        content="In this blog you will get to know aboout 5 interesting python modules that you gonna love to use."
+    <meta name="keywords"
+        content="python modules, python, interesting python modules, best python modules, python emoji module, python howdoi module, python turtle module, python wikipedia module, python urllib module">
+
+    <link rel="stylesheet" href="/blogs/blogs css/fivepytmodules.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar h-nav">
+            <ul class="nav-list v-class">
+                <li class="logo"><a href="index.html" class="codingbeast">Coding Beast</a></li>
+                <div class="lis">
+                    <li class="home"><a href="index.html" class="items">Home</a></li>
+                    <li class="tutorials"><a href="tutorials.html" class="items">Tutorials</a></li>
+                    <li class="notes"><a href="notes.html" class="items">Notes</a></li>
+                    <li class="blogs"><a href="blogs.html" class="items">Blogs</a></li>
+                </div>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="allcont">
+
+            <div class="blcontainer">
+
+                <section class="introcont intelem">
+                    <h1 class="inttitle intelem">5 Interesting Python Modules</h1>
+
+                    <img class="intimg intelem" src="/blogs/bimg/fivemodules.jpg" alt="ai">
+
+                    <article class="intart">
+                        In this blog we are going to look 5 interesting python modules that will increase your interest in python language and you will love to use these modules as well.
+                        <br>
+                        <br>
+                        Let's look at each of them :
+                        <br>
+                        <br>
+                        <strong class="sttxt">1. emoji & emojis module</strong> - emoji/emojis module in Python is a library that allows you to use emojis in your Python code. It is particularly useful for adding emojis to text in applications like chatbots, social media automation, or any text-based UI.
+                        <br>
+                        <br>
+                        As emoji is not a built in module so we need to install it through terminal.
+                        <div class="codecont">
+                            <pre id="textToCopy">
+pip install emoji</pre>
+                        </div>
+                        <br>
+                        After installing the "emoji" module we are ready to use it in our python file.
+                        <br>
+                        <br>
+                        <div class="codecont">
+                            <pre id="textToCopy">
+import emoji
+import emojis
+                                
+print(emoji.emojize("I am :thumbs_up:"))
+                                
+emojified = emojis.encode("Python = :snake:")
+print(emojified)</pre>
+                        </div>
+                        <br>
+                        <br>
+                        <strong class="sttxt">2. howdoi module</strong> - The howdoi module in Python is a command-line tool that provides quick answers to programming questions using Stack Overflow. It allows developers to quickly get code snippets and solutions for common programming problems directly from their terminal.
+                        <br>
+                        <br>
+                        howdoi is not a built in module so we need to install it through terminal.
+                        <div class="codecont">
+                            <pre id="textToCopy">
+pip install howdoi</pre>
+                        </div>
+                        <br>
+                        After installing the "howdoi" module we can use it directly from terminal by typing "howdoi" and then the question whose answer we want.
+                        <br>
+                        <br>
+                        <img class="intelem howdimg" src="/blogs/bimg/howdo.png" alt="ai">
+                        <br>
+                        <br>
+                        <strong class="sttxt">3. wikipedia module</strong> - The wikipedia module in Python is a convenient library that allows you to access Wikipedia's content programmatically. You can search for articles, get summaries, and retrieve full article texts directly from Python scripts.
+                        <br>
+                        <br>
+                        As wikipedia is not a built in module so we need to install it through terminal.
+                        <div class="codecont">
+                            <pre id="textToCopy">
+pip install wikipedia</pre>
+                        </div>
+                        <br>
+                        After installing the "wikipedia" module we are ready to use it in our python file.
+                        <br>
+                        <br>
+                        <div class="codecont">
+                            <pre id="textToCopy">
+import wikipedia
+
+print(wikipedia.summary("Mark Zuckerberg"))
+                                
+print(wikipedia.summary("Mark Zuckerberg", sentences = 2))</pre>
+                        </div>
+                        <br>
+                        <br>
+                        <strong class="sttxt">4. urllib module</strong> - The urllib module in Python is a package that collects several modules for working with URLs. It provides functions for manipulating URLs and fetching data from the web.
+                        <br>
+                        <br>
+                        urllib module is part of the Python Standard Library, so you don't need to install anything extra to use it.
+                        <br>
+                        <br>
+                        <div class="codecont">
+                            <pre id="textToCopy">
+from urllib.request import urlopen
+
+page = urlopen("https://www.youtube.com/")
+print(page.headers)
+                                
+page2 = urlopen("https://www.youtube.com/")
+code = page2.read()
+print(code)</pre>
+                        </div>
+                        <br>
+                        <strong class="sttxt">5. turtle module</strong> - The turtle module in Python is a standard library module used to introduce programming to kids and beginners. It provides a way to draw shapes and patterns using a virtual "turtle" that can be controlled with code. The turtle starts at the center of a window and can move forward, backward, turn left, and turn right.
+                        <br>
+                        turtle module is part of the Python Standard Library, so you don't need to install anything extra to use it.
+                        <br>
+                        <br>
+                        <div class="codecont">
+                            <pre id="textToCopy">
+import turtle
+
+myTurtle = turtle.Turtle()
+myWin = turtle.Screen()
+                                
+# Turtle to draw a spiral
+def drawSpiral(myTurtle, linelen):
+    myTurtle.forward(linelen)
+    myTurtle.right(90)
+    drawSpiral(myTurtle, linelen-10)
+                                
+drawSpiral(myTurtle, 80)
+myWin.exitonclick()</pre>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <h2>Watch the below themes video :-</h2>
+                        <br>
+                        <iframe class="ytvid" width="600" height="335" src="https://www.youtube.com/embed/f_EqhN57gHw?si=KbwrbTLdIBnRU58N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                       
+                    </article>
+
+                </section>
+
+            </div>
+
+            <span class="verline"></span>
+
+            <div class="adscont">
+
+                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; margin-bottom: 3vh;">Explore More</h2>
+
+                <div class="adcont">
+                    <img src="img/android.png" class="adimg" alt="img">
+                    <div class="adabt">
+                        <h5 class="adname">Android App Development Tutorial [Hindi]</h5>
+                        <p class="addesc">This course will teach you everything about android app development with Kotlin from starting to the end. This course is Beginners Free and will make you Advanced android app developer till end of the course. I have also prodivded my Handwritten Notes in this course that is absolutely helpful.</p>
+                        <a href="https://www.youtube.com/watch?v=hZZxY0iPfhY&t=1s" target="_blank"><button class="watch-btn">Watch Tutorial</button></a>
+                    </div>
+                </div>
+
+                <div class="adcont">
+                    <img src="img/python.png" class="adimg" alt="img">
+                    <div class="adabt">
+                        <h5 class="adname">Python Notes</h5>
+                        <p class="addesc">This Python language handwritten notes is a unique and personal learning
+                            experience. These colorful notes contains all concepts explanation and thier codes + each code's
+                            explanation as well which helps you to easily understand any concept. These Notes are Perfect
+                            for students, coding enthusiasts and professionals looking to deepen their understanding of
+                            Python programming, these notes are designed to simplify complex concepts and enhance your
+                            coding skills.</p>
+                        <a href="https://www.youtube.com/watch?v=hZZxY0iPfhY&t=1s" target="_blank"><button class="watch-btn">Notes PDF</button></a>
+                    </div>
+                </div>
+
+                <div class="adcont">
+                    <img src="img/ytchannel.jpg" style="width: 19.9vw; height: 70vh; border: 0.1vw solid black;" alt="img">
+                    <div class="adabt">
+                        <h5 class="adname">Coding Beast - YT Channel</h5>
+                        <p class="addesc">Visit the YouTube channel for more Programming Languages Tutorials, Free courses, Techs topics and concepts, web development and many more.</p>
+                        <a href="https://www.youtube.com/watch?v=hZZxY0iPfhY&t=1s" target="_blank"><button class="watch-btn">Visit Channel</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            Copyright © 2024 | Coding Beast
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
