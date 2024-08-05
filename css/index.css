@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    background: rgba(0, 0, 0, 0.938);
+}
+
+:root{
+    --nav: #2b304f;
+    --main: #68f9f9;
+}
+
+header{
+    position: sticky;
+    top:0;
+}
+
+.navbar{
+    display: flex;
+    height: 7vh;
+    background: var(--nav);
+    border-radius: 20vh 0vh 20vh 0vh;
+}
+
+.codingbeast{
+    margin-left: 3vw;
+    font-size: 5vh;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Alkatra', serif;
+}
+
+.nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.items{
+    text-decoration: none;
+    padding: 1vh 2vw;
+    color: white;
+    font-size: 3vh;
+}
+.items:hover{
+    text-decoration: underline white ;
+}
+
+li{
+    list-style: none;
+}
+
+.lis{
+    display: flex;
+    margin-left: 17vw;
+}
+
+
+.firstSection{
+    height: 88.8vh;
+}
+
+.firstHalf{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-main{
+    display: flex;
+    align-items: center;
+    padding: 10vh;
+    padding-top: 18vh;
+    color: white;
+}
+.text-big{
+    font-family: "Bona Nova SC", serif;
+    font-weight: 600;
+    font-size: 6vh;
+    text-decoration: overline #60699f;
+    color: white;
+}
+
+.text-big2{
+    font-family: 'Bebas', serif;
+    font-size: 3.6vh;
+    text-decoration: overline #60699f;
+    padding-top: 1vh;
+}
+
+.text-small{
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2vh;
+}
+.buttons{
+    display: flex;
+    margin-top: 2vh;
+}
+.btns{
+    width: 8vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    border: 0.3vh solid white;
+    border-radius: 1.4vh;
+    font-size: 1.8vh;
+    cursor: pointer;
+    margin-right: 0.5vw;
+    background-color: var(--nav);
+    font-weight: bold;
+}
+.btns:hover{
+    background-color: #161929;
+}
+
+.logoImg{
+    width: 50vw;
+    height: 50vh;
+    margin-left: 2vw;
+    border-radius: 0vw 10vh 0vh 10vw;
+    filter: contrast(100%);
+    opacity: 0.8;
+}
+
+
+.foot{
+    background-color: var(--nav);
+    color: white;
+    height: 4.2vh;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: 'Alkatra', cursive;
+}
+
+
+
+.burger{
+    display: none;
+    position: absolute;
+    left: 90vw;
+    top: 1.5vh;
+}
+.line{
+    width: 6vw;
+    height: 0.6vh;
+    background-color: white;
+    margin: 0.7vh
+}
+@media only screen and (max-width: 1200px){  
+
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        height: 26vh;
+        transition: all 0.2s ease-out;
+        border-radius: 0;
+    }
+    .lis{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+    .h-nav{
+        height: 7vh;    /* Only height will be interchanged with toggling element and rest toggling element's property will stay remain same */
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+    .buttons{
+        width: 88vw;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+    .btns{
+        width: 30vw;
+        margin: 0.3vh;
+        font-size: 1.5vh;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+    }
+    .logoImg{
+        display: none;
+    }
+    .text-small{
+        width: 88vw;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    .text-big{
+        text-align: center;
+        width: 88vw;
+        opacity: 1;
+    } 
+    .text-big2{
+        text-align: center;
+        text-decoration: underline var(--nav);
+    } 
+}
+
+
+
