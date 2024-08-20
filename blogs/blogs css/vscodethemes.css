@@ -58,11 +58,12 @@ li{
 
 .allcont{
     display: flex;
+    flex-direction: column;
 }
 .verline{
     background-color: rgb(148, 145, 145);
     width: 0.1vw;
-    height: 480vh;
+    display: none;
 }
 
 .adscont{
@@ -217,14 +218,6 @@ li{
     }
     .verline{
         display: none;
-    }
-    .adscont{
-        display: none;
-        flex-direction: column;
-    }
-    .ads{
-        margin-top: 7vh;
-        width: 29vw;
     }
 
     .blcontainer{
